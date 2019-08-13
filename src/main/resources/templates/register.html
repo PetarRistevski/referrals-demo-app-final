@@ -45,28 +45,29 @@
                            placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="retype-password">Please Re-type Password</label>:
+                    <label for="retypePassword">Password</label>:
                     <input type="password"
-                           id="retype-password"
-                           name="password"
-                           class="form-control3"
-                           placeholder="Re-type Password" style="margin left: 50px">
+                           id="retypePassword"
+                           name="retypePassword"
+                           class="form-control2"
+                           placeholder="Password">
                 </div>
+
                 <div class="form-group">
                     <p>Are you registering based on other's code?
-                    <input type="checkbox"
-                           id="checkbox"
-                           name="checkbox"
-                           class="form-control"
-                           onclick="if (this.checked){ document.getElementById('code').removeAttribute('disabled'); }"
-                    >
+                        <input type="checkbox"
+                               id="checkbox"
+                               name="checkbox"
+                               class="form-control"
+                               onclick="if (this.checked){ document.getElementById('code_to_register').removeAttribute('disabled'); }"
+                        >
                     </p>
                 </div>
                 <div class="form-group">
-                    <label for="code">Enter your code here:</label>
+                    <label for="code_to_register">Enter your code here:</label>
                     <input type="text"
-                           id="code"
-                           name="code"
+                           id="code_to_register"
+                           name="code_to_register"
                            class="form-control4"
                            placeholder="Your code goes here..." disabled>
 
@@ -81,7 +82,7 @@
                                    id="login-submit"
                                    class="form-control btn btn-info"
                                    value="Register"
-                            onclick="/save">
+                                onclick="/save">
                                 Submit </button>
                         </div>
                     </div>
